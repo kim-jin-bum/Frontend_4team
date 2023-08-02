@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <title>송금 모드</title>
+    <style media="screen">
+        body {
+            margin: 0px;
+        }
+        #box {
+            display:flex;
+            position: relative;
+            height: auto;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        #left {
+            float: left;
+            height: 100vh;
+            width: 50%;
+            position: relative;
+            border: 1px solid black;
+        }
+        iframe{
+            width:100%;
+            height:100%;
+            border-style:none;
+        }
+        #right {
+            float: left;
+            height: 100vh;
+            width: 50%;
+            position: relative; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        #text{
+            width:90%;
+            height:20%;
+            display: flex;
+        }
+        span{
+            display: flex;
+            width: 394px;
+            height: 109px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #000;
+            font-family: 'IBM Plex Sans KR', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -0.333px;
+        }
+        svg{
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+            fill: #AEC4D9;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="left">
+            <iframe src="../Phone/phone.html"></iframe>
+        </div>
+        <div id="right">
+            <div id="text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="106" height="108" viewBox="0 0 106 108" fill="none">
+                    <path d="M64.7672 78.5337H67.9592V81.7257H64.7672V78.5337ZM74.1752 68.4057H77.3672V83.5257H74.1752V68.4057ZM76.2392 74.7417H80.1512V77.3577H76.2392V74.7417ZM59.8232 83.0937L59.4632 80.6217C63.4472 80.6217 68.7032 80.5977 73.1912 80.0457L73.4312 82.2297C68.7992 83.0217 63.7112 83.0697 59.8232 83.0937ZM62.2952 84.4137H77.3672V90.6057H74.1752V86.8617H62.2952V84.4137ZM60.0392 70.0137H72.6392V72.2937H60.0392V70.0137ZM66.3512 72.8217C69.6152 72.8217 71.7512 74.0937 71.7512 76.1337C71.7512 78.1737 69.6152 79.4457 66.3512 79.4457C63.0632 79.4457 60.9272 78.1737 60.9272 76.1337C60.9272 74.0937 63.0632 72.8217 66.3512 72.8217ZM66.3512 74.9097C64.8392 74.9097 63.9512 75.2937 63.9512 76.1337C63.9512 76.9257 64.8392 77.3577 66.3512 77.3577C67.8392 77.3577 68.7272 76.9257 68.7272 76.1337C68.7272 75.2937 67.8392 74.9097 66.3512 74.9097ZM64.7672 68.2137H67.9592V71.0457H64.7672V68.2137ZM96.736 68.4057H99.952V84.3657H96.736V68.4057ZM85.144 87.6777H100.504V90.2217H85.144V87.6777ZM85.144 82.7577H88.336V88.7097H85.144V82.7577ZM87.856 69.7977C91.264 69.7977 93.88 72.1497 93.88 75.4377C93.88 78.7017 91.264 81.0777 87.856 81.0777C84.448 81.0777 81.808 78.7017 81.808 75.4377C81.808 72.1497 84.448 69.7977 87.856 69.7977ZM87.856 72.5577C86.2 72.5577 84.928 73.6137 84.928 75.4377C84.928 77.2377 86.2 78.2937 87.856 78.2937C89.488 78.2937 90.76 77.2377 90.76 75.4377C90.76 73.6137 89.488 72.5577 87.856 72.5577Z" fill="white"/>
+                    <g filter="url(#filter0_iii_543_650)">
+                    <circle cx="50" cy="50.7852" r="50" fill="#AEC4D9"/>
+                    </g>
+                    <path d="M55.2877 33.7057V70.0693H46.5164V41.9088H46.3034L38.1713 46.8804V39.281L47.1379 33.7057H55.2877Z" fill="#D27A7A"/>
+                    <defs>
+                    <filter id="filter0_iii_543_650" x="0" y="0.785156" width="100" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_543_650"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.754167 0 0 0 0 0.881998 0 0 0 0 1 0 0 0 1 0"/>
+                    <feBlend mode="normal" in2="effect1_innerShadow_543_650" result="effect2_innerShadow_543_650"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.489583 0 0 0 0 0.52875 0 0 0 0 0.5875 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="effect2_innerShadow_543_650" result="effect3_innerShadow_543_650"/>
+                    </filter>
+                    </defs>
+                </svg>
+                <div>
+                <span>[송금] 버튼을 누르세요</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
