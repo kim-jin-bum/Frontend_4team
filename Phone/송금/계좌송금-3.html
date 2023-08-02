@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                margin: 0; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            #fullscreen{
+                width: 390px;
+                height: 844px;
+                background: #FFF;
+                border:1px solid black;
+                margin:auto;
+                position:relative;
+            }
+            #timebar{
+                display: flex;
+                width: 390px;
+                height: 59px;
+                justify-content: center;
+                align-items: flex-end;
+                flex-shrink: 0;
+               
+            }
+            #time{
+                display: flex;
+                width: 54px;
+                height: 20px;
+                flex-shrink: 0;
+                color: #000;
+                text-align: center;
+                margin-right:60%;
+                margin-bottom:20px;
+                font-family: 'SF Pro Text', Helvetica, Arial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 21px; /* 131.25% */
+                letter-spacing: -0.32px;
+                margin-left:40px;
+                
+            }
+            #status{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                flex: 1 0 0;
+                align-self: stretch;
+                margin-left: -80px;
+            }
+            #hellobox{
+                display: flex;
+                width: 389px;
+                height: 44px;
+                flex-shrink: 0;
+            }
+            #header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 180px;
+                height: 25px;
+                flex-shrink: 0;
+                border-radius: 15px;
+                background: #FFF;
+                margin-right:-120px;
+                margin-left:20px;
+                margin-top:10px;
+            }
+            #function{
+                width:130px;
+                color: #4E5459;
+                text-align: center;
+                font-family: 'IBM Plex Sans KR', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 800;
+                letter-spacing: -0.32px;
+                margin-left: 5px;
+            }
+            #icon{
+                display:flex;
+                width: 125px;
+                height: 38px;
+                flex-shrink: 0;
+                margin-left:46.25%;
+            }
+            #icon1{
+                display: flex;
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                margin-top:14px;
+                margin-left:35%;
+                margin-top:10px;
+            }
+            #icon2{
+                display: flex;
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                margin-top:14px;
+                margin-left:10.5%;
+                margin-top:10px;
+
+            }
+            #selectAccount {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 360px;
+            height: 54px;
+            flex-shrink: 0
+            }
+
+            #selectAccount span {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            }
+            #selectBox{
+                width: 356px;
+                height: 150px;
+                flex-shrink: 0;
+                margin-left:15px;
+            }
+            #selectBank{
+                width: 352px;
+                height: 63px;
+                flex-shrink: 0;
+                display: flex;
+            }
+            #selectAccountNum{
+                width: 352px;
+                height: 63px;
+                flex-shrink: 0;
+                margin-top:8px;
+                display: flex;
+            }
+            #bank{
+                width: 89px;
+                height: 57px;
+                flex-shrink: 0;
+                text-align: center;
+                margin-top: 20px;
+                color: #000;
+                font-family: 'IBM Plex Sans KR', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-left:-10px;
+            }
+            #bankNum{
+                width: 89px;
+                height: 57px;
+                flex-shrink: 0;
+                text-align: center;
+                margin-top: 20px;
+                color: #000;
+                font-family: 'IBM Plex Sans KR', sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            #chooseBank{
+                width: 256px;
+                height: 57px;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: flex-end; 
+                align-items: center;
+            }
+            #chooseAccount{
+                width: 256px;
+                height: 57px;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: flex-end; 
+                align-items: center;
+            }
+            #chooseBank button{
+                height:25px;
+                margin-bottom: -50px;
+                margin-right:-5px;
+            }
+            #chooseAccount button{
+                height:25px;
+                margin-bottom: -50px;
+                margin-right:5px;
+            }
+            /* #chooseBank button{
+                height:25px;
+                margin-bottom: -60px;
+                background: #0085FF;
+                border-style:none;
+                border-radius: 5px;
+                color:#FFF
+            }
+            #chooseBank button:active{
+                height:25px;
+                margin-bottom: -60px;
+                background: #fff;
+                border-style:none;
+                border-radius: 5px;
+                color:#000
+            }
+            #chooseAccount button{
+                height:25px;
+                margin-bottom: -60px;
+                background: #0085FF;
+                border-style:none;
+                border-radius: 5px;
+                color:#FFF
+            }
+            #chooseAccount button:active{
+                height:25px;
+                margin-bottom: -60px;
+                background: #fff;
+                border-style:none;
+                border-radius: 5px;
+                color:#000
+            } */
+            #registerbutton{
+                margin-top:110%;
+                margin-left:8%;
+            }
+            #registerbutton button{
+                width: 326.868px;
+                height: 56.512px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #CCC;
+                border-style:none;            
+            }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div id="fullscreen">
+        <div id="timebar">
+            <div id="time">9:41</div>
+            <div id="status">
+                <div id="signal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+                        <path d="M10.0011 3.68262C10.0011 3.13033 10.4488 2.68262 11.0011 2.68262H12.0011C12.5534 2.68262 13.0011 3.13033 13.0011 3.68262V11.6826C13.0011 12.2349 12.5534 12.6826 12.0011 12.6826H11.0011C10.4488 12.6826 10.0011 12.2349 10.0011 11.6826V3.68262Z" fill="black"/>
+                        <path d="M15.0011 1.68262C15.0011 1.13033 15.4488 0.682617 16.0011 0.682617H17.0011C17.5534 0.682617 18.0011 1.13033 18.0011 1.68262V11.6826C18.0011 12.2349 17.5534 12.6826 17.0011 12.6826H16.0011C15.4488 12.6826 15.0011 12.2349 15.0011 11.6826V1.68262Z" fill="black"/>
+                        <path d="M5.0011 7.18262C5.0011 6.63033 5.44881 6.18262 6.0011 6.18262H7.0011C7.55338 6.18262 8.0011 6.63033 8.0011 7.18262V11.6826C8.0011 12.2349 7.55338 12.6826 7.0011 12.6826H6.0011C5.44881 12.6826 5.0011 12.2349 5.0011 11.6826V7.18262Z" fill="black"/>
+                        <path d="M0.00109863 9.68262C0.00109863 9.13033 0.448814 8.68262 1.0011 8.68262H2.0011C2.55338 8.68262 3.0011 9.13033 3.0011 9.68262V11.6826C3.0011 12.2349 2.55338 12.6826 2.0011 12.6826H1.0011C0.448814 12.6826 0.00109863 12.2349 0.00109863 11.6826V9.68262Z" fill="black"/>
+                      </svg>
+                </div>
+                <div id="wifi">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50156 3.27014C10.9681 3.27025 13.3404 4.23767 15.128 5.97244C15.2626 6.10637 15.4777 6.10468 15.6103 5.96865L16.8971 4.64307C16.9642 4.57407 17.0016 4.48062 17.0011 4.38338C17.0005 4.28614 16.962 4.19314 16.8941 4.12495C12.2022 -0.464829 4.80018 -0.464829 0.108262 4.12495C0.040296 4.19309 0.00173311 4.28607 0.00110639 4.3833C0.000479673 4.48054 0.0378408 4.57402 0.104922 4.64307L1.39206 5.96865C1.52455 6.10488 1.73988 6.10657 1.87441 5.97244C3.66225 4.23755 6.03477 3.27014 8.50156 3.27014ZM8.53701 7.27199C9.89222 7.27191 11.1991 7.78608 12.2036 8.7146C12.3395 8.84638 12.5535 8.84352 12.686 8.70817L13.9713 7.38258C14.039 7.31305 14.0765 7.21873 14.0755 7.12071C14.0746 7.0227 14.0351 6.92917 13.9661 6.86106C10.907 3.95647 6.16962 3.95647 3.11055 6.86106C3.04145 6.92917 3.00202 7.02274 3.00111 7.12079C3.00021 7.21884 3.03789 7.31315 3.10572 7.38258L4.39064 8.70817C4.52308 8.84352 4.73712 8.84638 4.87299 8.7146C5.87688 7.78669 7.18269 7.27256 8.53701 7.27199ZM11.1507 9.85933C11.1526 9.95762 11.1148 10.0524 11.046 10.1212L8.82275 12.4115C8.75758 12.4788 8.66872 12.5167 8.57601 12.5167C8.48329 12.5167 8.39444 12.4788 8.32927 12.4115L6.10562 10.1212C6.03693 10.0523 5.99914 9.95754 6.00118 9.85925C6.00321 9.76096 6.0449 9.66788 6.11638 9.602C7.53625 8.37616 9.61577 8.37616 11.0356 9.602C11.1071 9.66794 11.1487 9.76104 11.1507 9.85933Z" fill="black"/>
+                      </svg>
+                </div>
+                <div id="battery">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="14" viewBox="0 0 28 14" fill="none">
+                        <path opacity="0.35" d="M0.528642 4.68262C0.528642 2.76483 2.08331 1.21016 4.0011 1.21016H21.0011C22.9189 1.21016 24.4736 2.76483 24.4736 4.68262V9.68262C24.4736 11.6004 22.9189 13.1551 21.0011 13.1551H4.0011C2.08331 13.1551 0.528642 11.6004 0.528642 9.68262V4.68262Z" stroke="#311717" stroke-width="1.05509"/>
+                        <path opacity="0.4" d="M26.0011 5.68262V9.90296C26.8502 9.54552 27.4023 8.71402 27.4023 7.79279C27.4023 6.87156 26.8502 6.04006 26.0011 5.68262Z" fill="#311717"/>
+                        <path d="M2.0011 4.68262C2.0011 3.57805 2.89653 2.68262 4.0011 2.68262H21.0011C22.1057 2.68262 23.0011 3.57805 23.0011 4.68262V9.68262C23.0011 10.7872 22.1057 11.6826 21.0011 11.6826H4.0011C2.89653 11.6826 2.0011 10.7872 2.0011 9.68262V4.68262Z" fill="#311717"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+        <div id="hellobox">
+            <div id="header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="36" viewBox="0 0 34 36" fill="none">
+                    <path d="M21.25 27L12.75 18L21.25 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                <span id="function">자주쓰는 계좌 추가</span>
+            </div>
+            <div id="icon">
+                <div id="icon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M15.1894 21.7471C15.7198 21.7471 20.0885 21.6837 20.4635 21.3107C20.8386 20.9376 21.0493 20.4316 21.0493 19.904V8.96266L12.0493 2L3.04932 8.96266V19.904C3.04932 20.4316 3.26003 20.9376 3.6351 21.3107C4.01018 21.6837 8.01161 21.7003 8.54204 21.7003" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.41754 21.7471L9.50032 14.7434L15.0591 14.7432V21.7471" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div id="icon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M3.55908 12.5322H21.5591" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.55908 6.53223H21.5591" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.55908 18.5322H21.5591" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="selectAccount">
+            <span>최근 송금계좌에서 선택</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                <path d="M10.6722 7.50202L17.2067 14.4698L10.7414 21.5018" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+        </div>
+        <div id="selectBox">
+            <div id="selectBank">
+                <div id="bank">은행</div>
+                <div id="chooseBank"><button>은행 선택</button></div>
+            </div>
+            <hr style="width:90%">
+            <div id="selectAccountNum">
+                <div id="bankNum">계좌번호</div>
+                <div id="chooseAccount"><button>계좌 확인</button></div>
+            </div>
+            <hr style="width:90%">
+        </div>
+        <div id="registerbutton">
+            <button>계좌등록</button>
+        </div>
+    </div>
+</body>
+</html>
